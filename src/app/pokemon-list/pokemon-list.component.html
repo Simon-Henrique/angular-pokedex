@@ -1,0 +1,15 @@
+<div>
+  <img src="	https://simon-dev-portfolio.netlify.app/assets/img/logo.png" width="200">
+</div>
+<div class="pokemon-list">
+  <app-pokemon-card *ngFor=" let pokemon of pokemonService.pokemons; index as i"
+    [pokemon]="pokemon.name"
+    [number]="i + 1">
+  </app-pokemon-card>
+</div>
+
+<!--
+<div *ngFor="let pokemon of pokemons">
+  pokemon:{{pokemon}}
+</div>
+-->
